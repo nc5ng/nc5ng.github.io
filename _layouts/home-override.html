@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="cover-container cover-background">
+
+  
+  <div class="jumbotron jumbotron-fluid transparent" id="jumbo-content">
+    
+    <div class="container">
+
+      <div class="row home justify-content-left blur-shaddow">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+	  {{ content }}
+	</div>
+      </div>
+  
+      <div class="justify-content-start">
+	  <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more &raquo;</a></p>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+  <div class="container anouncements">
+
+    <div class="text-center">
+      <a href="/posts"><h3 class="" style="color:white"> Latest  News </h3></a>
+    </div>
+
+    <div class="row announce-list">
+      
+      {% for  post in site.posts limit: 3 %}
+
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 form-group">
+	<a href="{{ post.url | relative_url }}">
+	<div class="media">
+	  <div class="media-body post-meta background-lighten-hover round-border text-center">
+	    <h5  class="mt-0 text-center"> {{ post.date | date: date_format }} </h5>
+	    <a style="text-decoration:underline;" class="post-link text-center" href="{{ post.url | relative_url }}"><bf> {{ post.title | escape }} </bf> </a>
+	  </div>
+	</div>
+	</a>
+      </div>
+
+      {% endfor %}
+      
+    </div>
+
+    <!--
+    <table class="table table-hover borderless">
+      <tbody>
+	{% for post in site.posts limit: 3 %}
+	{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+	
+	<tr>
+	  <th scope="row" class="white-text blur-shaddow"> {{ post.date | date: date_format }} 
+	  </th>
+	  <td class="">
+	    <a style="text-decoration:underline" class="post-link white-text blur-shaddow" href="{{ post.url | relative_url }}">{{ post.title | escape }} </a>
+	  </td>
+	    
+	</tr>
+
+	{% endfor %}
+		     
+      </tbody>
+    </table>
+    -->
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    
+  </div>
+  
+  
+</div>
