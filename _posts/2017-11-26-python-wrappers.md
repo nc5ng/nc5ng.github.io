@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Release with Initial Python Wrappers"
-date:   2017-11-20 18:39:56 -0600
+date:   2017-11-26 12:00:00 -0800
 author: AS
 categories: anouncement
 ---

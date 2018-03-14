@@ -1,0 +1,43 @@
+<div id="{{ carousel_id }}"
+     class="carousel slide {{ carousel_classes }}"
+     {% if carousel_auto %}
+     data-ride="carousel"
+     data-interval="{{ carousel_interval | default: 10000 }}"
+     {% else %}
+     data-interval="false"
+     data-ride=""
+     {% endif %}
+     >
+  {% if carousel_max == Nil %}
+  {% assign carousel_max = 5 %}
+  {% endif %}
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for slide in carousel_slides  limit: carousel_max%}
+    <li data-target="#{{ carousel_id }}" data-slide-to="{% increment counter %}" {% if counter == 1 %} class="active" {% endif %} ></li>
+    {% endfor %}
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    {% for slide in carousel_slides limit: carousel_max %}
+    <div class="item slide-{% increment counter2 %} {% if counter2 == 1 %}active{% endif %}">
+      <div class="container">
+	<div class="carousel-caption">
+	  <h1> {{ slide.header | default: "Insert Header in YAML FrontMatter" }} </h1>
+	  <p> {{ slide.caption | default: "Insert Caption in YAML Frontmatter for" }} </p>
+	  <p><a class="btn btn-lg btn-primary" href="{{slide.link}}" role="button"> {{ slide.action | default: "Read More"}} </a></p>
+	</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <a class="left carousel-control" href="#{{ carousel_id }}" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#{{ carousel_id }}" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- /.carousel -->

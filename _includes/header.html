@@ -1,5 +1,6 @@
-<header class="site-header" role="banner" id="header-container">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    {% include full_navbar.html %}
-</header>
+<div class="site-header" role="banner" id="site-header-container">
+
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+  {% include full_navbar.html %}
+</div>

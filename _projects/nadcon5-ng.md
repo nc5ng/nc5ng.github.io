@@ -1,7 +1,6 @@
 ---
 title: NADCON5-ng
 layout: page
-permalink: nadcon5ng.html
 ---
 
 NADCON5-ng is a core component of the `nc5ng` . It is a fork of the upstream NADCON5.0 Source code with additional restructring and wrapping applied.
