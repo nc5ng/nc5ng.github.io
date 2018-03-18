@@ -1,0 +1,36 @@
+<hr class="featurette-divider">
+<div class="row featurette marketing">
+
+  {% for featurette in featurettes %}
+<div class="row featurette">
+  <div class="col-lg-4">
+    {% if featurette_alt_style == "true" %}
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+    {% endif %}
+    
+    <h2 class="featurette-heading">
+      {{ featurette.heading }}
+    </h2>
+    <p class="lead">
+      {{ featurette.content }}
+    </p>
+    <p><a class="btn btn-default" href="{{ featurette.link }}" role="button">View details &raquo;</a></p>
+
+    {% if featurette_alt_style != "true"%}
+
+  </div>
+  
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive center-block" data-src="{{ featurette.img }}" alt="{{ featurette.alt }}">
+
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+{% if featurette_alt_style == "true" %}
+</div>
+{% endif %}
+
+
+<hr class="featurette-divider">

@@ -26,8 +26,10 @@ This project is inspired by the [NADCON](https://www.ngs.noaa.gov/TOOLS/Nadcon/N
 
 ### Disclaimer
 
-This `nc5ng` has no affiliation with the US National Geodetic Survey, NOAA, or the US Government.
+`nc5ng` and nc5ng.org have no affiliation with the US National Geodetic Survey, NOAA, or the US Government.
 
-Any data provided in any `nc5ng` project is for research use only, absolutely no guarantee is made as to its validity or correctness.
+Any data provided in `nc5ng` or any sub- project is for research use only, absolutely no guarantee is made as to its validity or correctness.
 
-Licensing information is provided in each project. In general `nc5ng` strives to release projects open source or public domain whenever possible.
+Licensing information is provided in each project. Projects are provided unrestricted open source or public domain whenever possible. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This wwebpage is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

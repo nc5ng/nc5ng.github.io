@@ -1,0 +1,25 @@
+{% assign item=include.item %}
+
+{% if item.title %}
+<a class="item-link" href="{{ item.url | relative_url }}">
+  <h3  class="mt-0 text-center">{{ item.title | escape }} </h3></a>
+{% endif %}
+
+{% if item.date %}
+{% if include.no_date == nil %}
+<h4 class="text-center"> {{ item.date | date: date_format }}</h4>
+{% endif %}
+{% endif %}
+
+<p>
+  {% if item.blurb %}
+  {{ item.blurb }} 
+  {% else %}
+  {{item.excerpt |  strip_html}}
+  {% endif %}
+
+  <a class="item-link"
+     href="{{item.url |relative_url }}">
+    ....
+  </a>
+</p>

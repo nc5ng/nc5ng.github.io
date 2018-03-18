@@ -83,7 +83,11 @@ site_css: /assets/styles/site.css
 
 
 header_pages:
-  - projects.html
-  - posts.html
-  - whitesheets.html
+  - projects.md
+  - posts.md
+  - whitesheets.md
   - about.md
+
+
+
+date_format: "%b %-d, %Y"

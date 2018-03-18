@@ -88,6 +88,15 @@ main{
 //    text-align: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
+ul.no-bullets{
+    list-style:none;
+    padding-left: 0;
+}    
+
 .nav {
     margin-bottom: 0px;
 }
@@ -188,6 +197,9 @@ div.background-darken{
   margin-left: 10px;
 }
 
+.featurette.marketing {
+    margin-right:0;
+}
 
 /**
 .navbar-nav > li > a, .navbar-brand {

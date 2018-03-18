@@ -3,18 +3,13 @@ layout: default
 ---
 
 <div class="container-float carousel-container">
-  {% assign carousel_auto = "true" %}
-  {% assign carousel_id = "headlineCarousel" %}
-  {% assign carousel_classes="cover-background" %}
-  {% assign carousel_slides = page.headlines %}
-  {% include carousel.html %}
+  {% include carousel.html carousel_auto = "true" carousel_id = "headlineCarousel" carousel_classes="cover-background" carousel_slides= page.headlines %}
   
 </div>
 
 
 <div class="container-float anouncements">
-  {% assign post_limit=3 %}
-  {% include news.html %}
+  {% include news.html post_limit=3 %}
 </div> <!--.container-->
 
 <hr class="featurette-divider">

@@ -1,6 +1,8 @@
 ---
 title: NADCON5-ng
 layout: page
+blurb: "Build System for NADCON data and source code"
+github: github.com/nc5ng/NADCON5-ng
 ---
 
 NADCON5-ng is a core component of the `nc5ng` . It is a fork of the upstream NADCON5.0 Source code with additional restructring and wrapping applied.

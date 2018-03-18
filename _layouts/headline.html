@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+
+<div class="container-float carousel-container">
+
+  {% assign carousel_id = "headlineCarousel" %}
+  {% assign carousel_classes="cover-background" %}
+  {% assign carousel_slides = page.headlines %}
+  {% include carousel.html %}
+  
+</div>
+
+
+{{ content }}
