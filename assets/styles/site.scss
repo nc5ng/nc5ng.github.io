@@ -4,6 +4,9 @@
 @import "variables";
 @import "bootstrap";
 
+
+/** Root Element Styles */
+
 html{
     height:100%;
     width:100%;
@@ -16,32 +19,45 @@ html{
     box-sizing: inherit;
 }
 
-
-.transparent{
-    background: rgba(0,0,0,0.0);
-}
-
 body {
-    //background-color: black;
-    //background: url(/assets/img/bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    //background: rgba(0, 0, 0, 0.0);
     position: relative;
     margin: 0px ;
     min-height: 100%;
-//    padding-top: 5vh;
     padding-bottom: 15vh;
-//    min-height: 100%;
-//    margin-bottom: 100px;
 }
 
 main{
-//    padding-top: 5vh;
-//    padding-bottom:10vh;		     
-//    min-height: 85vh;
 }
+
+
+/** Content Elements */
+
+
+
+.nav {
+    margin-bottom: 0px;
+}
+
+
+#navbar-nav{
+ margin: 0px;
+}   
+
+
+div.home {
+    h1{
+	font-size:4rem;
+    }
+    font-size: 2rem;
+}
+
+
+
+
+/** Background Element Styles */
 
 .cover-background {
     background: linear-gradient(
@@ -52,9 +68,33 @@ main{
 			rgba(0, 0, 0, 0.8),
 			rgba(0, 0, 0, 0.9),
 			rgba(0, 0, 0, 0.99)
-		    ), url(/assets/img/bg.png) no-repeat center; //center fixed;
-    background-size: cover;
+		    ), url(/assets/img/bg.jpg) no-repeat center;    background-size: cover;
 }
+
+.transparent{
+    background: rgba(0,0,0,0.0);
+}
+
+
+.background-lighten{
+    background: rgba(255,255,255,0.75);
+    padding:10px;
+}
+
+.background-lighten-hover {
+    background: rgba(255,255,255,0.75 );
+    padding:10px;
+}
+
+.background-lighten-hover:hover{
+    background: rgba(255,255,255,1.0);
+}
+
+
+div.background-darken{
+    background: rgba(0,0,0,0.75);    
+}
+
 
 
 
@@ -85,8 +125,11 @@ main{
     min-height: 5vh;
     font-size: 1rem;
     max-height: 15vh;
-//    text-align: center;
 }
+
+
+
+/** Text and other element styles */
 
 .text-center {
     text-align: center;
@@ -97,148 +140,17 @@ ul.no-bullets{
     padding-left: 0;
 }    
 
-.nav {
-    margin-bottom: 0px;
-}
-
-
-/**
-header.site-header{
-    width:100%;
-    //    background-color: #{$grey-color-transparent};
-    padding: 0px;
-    padding-top: 0px;
-    margin: 0px;
-    height: 5vh;
-    position: absolute;
-    top: 0px;
-}*/
-
-#navbar-nav{
- margin: 0px;
-}   
-
-#jumbo-content{
-    //background: rgba(0, 0, 0, 0.5);
-    width:100%;
-    //padding-top: 0px;
-    color: white;
-    .display-3{
-	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	
-    }
-
-}
-
 
 .white-text{
     color:white;
 }
 
 
-div.shrinkwrap {
-    //display: inline-block;
-}
-
-.background-lighten{
-    background: rgba(255,255,255,0.75);
-    padding:10px;
-//    border-style: solid;
-}
-
-div.home {
-    h1{
-	font-size:4rem;
-    }
-    font-size: 2rem;
-}
-
-.background-lighten-hover {
-    background: rgba(255,255,255,0.75 );
-    padding:10px;
-//    border-style: solid;
-}
-
-.background-lighten-hover:hover{
-    background: rgba(255,255,255,1.0);
-//  padding:10px;
-//    border-style: solid;
-}
 
 
-div.background-darken{
-    background: rgba(0,0,0,0.75);
-    
-//    border-style: solid;
-}
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.marketing div[class*="col-"]{
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing div[class*="col-"] p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.featurette.marketing {
-    margin-right:0;
-}
-
-/**
-.navbar-nav > li > a, .navbar-brand {
-    padding-top:5px !important;
-    padding-bottom:5px !important;
-}
-
-.navbar {min-height:32px !important; max-height: 5vh;}
-*/
-
-div.round-border{
-    border-radius: 1em;
-    //rder-style: solid;
-    
-    
-}
-div.cover-container{
-    //min-height:85vh;
-
-    //padding-bottom: 25%;
-}
-
-.social-media-list {
-    padding-left:1vw;
-}
-
-.blur-shaddow{
-    //backdrop-filter: blur(1em);
-    
-    text-shadow: 0.5em 0.5em 2em black , -0.5em -0.5em 2em black , -0.0em 0.0em 0.5em black;
-}
 
 
-footer ul, menu li {
-    margin: 0;
-    padding: 0;
-}
-
-
+/** Home Page Featurettes */
 
 .carousel {
     margin-bottom: 60px;
@@ -278,17 +190,52 @@ footer ul, menu li {
 
 
 
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
 
-/* Since positioning the image, we need to help out the caption 
- 
-    
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
 
-/* Declare heights because of positioning of img element
-#headlineCarousel  .item {
-    height: 50vh;
-    //background: rgba(0.0,0.0,0.0,0.0);
-//  background-color: #fff;
+/* Center align the text within the three columns below the carousel */
+.marketing div[class*="col-"]{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing div[class*="col-"] p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.featurette.marketing {
+    margin-right:0;
 }
 
 
- */
+div.round-border{
+    border-radius: 1em;
+    //rder-style: solid;
+    
+    
+}
+
+
+
+footer ul, menu li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.social-media-list {
+    padding-left:1vw;
+}
+
