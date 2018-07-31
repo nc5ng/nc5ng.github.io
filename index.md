@@ -25,6 +25,9 @@ projects:
  - heading: "NADCON5.0 Manual"
    content: "Developer Manual for NADCON5.0 Core Programs"
    link: "https://docs.nc5ng.org/latest/nadcon5-manual.html"
+ - heading: "gmt-docker"
+   content: "Docker Image with Latest GMT Tools"
+   link: "/projects/gmt-docker"
 ---
 
 
