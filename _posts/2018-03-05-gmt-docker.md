@@ -6,4 +6,4 @@ author: AS
 categories: anouncement
 ---
 
-GMT Docker Images with GMT6.0 Trunk Releases are Posted to docker hub. See: [Project Page for more information](/projects/gmt-docker)
+GMT Docker Images with GMT6.0 Trunk Builds are Posted to Docker Hub.  Please See: [Project Page for more information](/projects/gmt-docker)
