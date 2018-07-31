@@ -5,7 +5,7 @@ blurb: "Docker Image with Latest GMT Tools, DCW, and GSHHG Data"
 github: github.com/nc5ng/gmt-docker
 ---
 
-Docker images provide a convenient way to use and evaluate development versions of tools without needing to polute the local system with complex build requirements
+Docker images can provide a convenient way to evaluate development versions of tools without needing to pollute the local system with complex build requirements. 
 
 nc5ng maintains precompiled images with latest Trunk GMT code, Up to date DCW Boundary Data and GSHHG  Coastal Data
 
