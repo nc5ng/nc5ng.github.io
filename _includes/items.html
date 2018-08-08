@@ -4,7 +4,7 @@
   {% endif %}
   >
 
-  {% for item in site.[include.items] [include.items_flags] %}
+  {% for item in site.[include.items] limit:{{include.limit}} %}
   
   <{{ include.item_el | default: "li"}} class="item-el {{include.item_el_classes}}"
     >

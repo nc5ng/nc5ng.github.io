@@ -2,5 +2,6 @@
   <a href="/posts"><h3 class=""> Latest  News </h3></a>
 </div>
 
-{% include items.html items_el="div" item_el="div" items_el_classes="row news-list marketing" item_el_classes="col-lg-4 col-md-4 col-sm-12 col-xs-12" items="posts" items_flags="| limit:[include.post_limit] "%} 
+{% capture iter_limit %}{{include.post_limit}}{% endcapture %}
+{% include items.html items_el="div" item_el="div" items_el_classes="row news-list marketing" item_el_classes="col-lg-4 col-md-4 col-sm-12 col-xs-12" items="posts" limit=iter_limit %} 
 
