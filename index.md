@@ -31,8 +31,8 @@ projects:
 ---
 
 
-A Programatic treatment of  historical geodetic transformations, currently United States only. 
+A Programmatic treatment of geodetic transformations, currently United States only with a focus on historical datums (USSD and NAD27) 
 
-For Geodesists, Geographers, Cartographers,  Artists, Historians, Data Scientists,  and Historiographers.
+For GIS Developers, Geodesists, Geographers, Cartographers,  Artists, Historians, Data Scientists,  and Historiographers.
 
 
