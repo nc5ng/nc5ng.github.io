@@ -17,7 +17,7 @@ projects:
    content: " Build System for NADCON data and source code"
    link: "/projects/nadcon5-ng"
  - heading: "<code>nc5ng-python</code>"
-   content: "Python (F2PY) Wrapper for NADCON programs and subroutines and Conversion Data"
+   content: "Python Wrapper for NADCON programs, subroutines and Conversion Data"
    link: "/projects/nc5ng-python"
  - heading: "gmt-docker"
    content: "Docker Image with Latest GMT Tools"

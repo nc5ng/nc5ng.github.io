@@ -1,13 +1,13 @@
 ---
 title: nc5ng-docker
 layout: page
-blurb: "Docker Image for nc5ng and NADCON5-ng"
+blurb: "Docker Image for nc5ng-python and NADCON5-ng"
 github: github.com/nc5ng/nc5ng-docker
 ---
 
-`gmt-docker` is docker image project that provides latest GMT Builds, DCW and GSHHG Data pre-installed. Standard extensions with pre-installed versions of `GMT/Python` and `jupyter` notebook are provided for the convenience of the developer community
+A docker image project that contains `nc5ng-python` packages and `nadcon5-ng` datasets in a single container. Based on the `gmt-docker` images ([Project Page](/projects/gmt-docker))
 
-To use the latest docker image from your machine
+To use the latest docker image running a jupyter python notebook server
 
 ```
 docker run -p "8888:8888" nc5ng/nc5ng

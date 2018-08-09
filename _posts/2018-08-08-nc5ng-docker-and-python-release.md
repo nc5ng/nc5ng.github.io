@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "New Python Library and Docker Images for nc5ng Released"
+title:  "New nc5ng-python Library and Development Docker Images Released"
 date: 2018-08-08 18:00:00 -0800
 author: AS
 categories: anouncement
 ---
 
+Released of a new python package to pypi and a related docker image for evaluation and development of nc5ng-python
 
 The `nc5ng-python` project has released the first development version of  `nc5ng-core-0.0.3` to pypi. It can be installed via pip on any python3 system. `pip install nc5ng-core`. The previous package `nc5ng` is deprecated and will be re-used in the future for a meta-package
 
