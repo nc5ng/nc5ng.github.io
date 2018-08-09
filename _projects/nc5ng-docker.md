@@ -1,7 +1,7 @@
 ---
 title: nc5ng-docker
 layout: page
-blurb: "Docker Image for nc5ng and NADCON5-ng`
+blurb: "Docker Image for nc5ng and NADCON5-ng"
 github: github.com/nc5ng/nc5ng-docker
 ---
 
