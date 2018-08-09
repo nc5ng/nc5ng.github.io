@@ -18,3 +18,4 @@ For more information on `nc5ng-python` see the [Project Page](/projects/nc5ng-py
 
 
 
+> ![/assets/img/nc5ng-docker/anouncement.png]
