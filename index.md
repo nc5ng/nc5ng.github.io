@@ -16,23 +16,18 @@ projects:
  - heading: "<code>nadcon5-ng</code>"
    content: " Build System for NADCON data and source code"
    link: "/projects/nadcon5-ng"
- - heading: "<code>nc5py-core</code>"
-   content: "Python (F2PY) Wrapper for NADCON programs and subroutines"
-   link: "/projects/nc5ng-python#s-nc5ng-core"
- - heading: "<code>nc5py-data</code>"
-   content: "Python API for NADCON input and output data"
-   link: "/projects/nc5ng-python#s-nc5ng-data"
- - heading: "NADCON5.0 Manual"
-   content: "Developer Manual for NADCON5.0 Core Programs"
-   link: "https://docs.nc5ng.org/latest/nadcon5-manual.html"
+ - heading: "<code>nc5ng-python</code>"
+   content: "Python (F2PY) Wrapper for NADCON programs and subroutines and Conversion Data"
+   link: "/projects/nc5ng-python"
  - heading: "gmt-docker"
    content: "Docker Image with Latest GMT Tools"
    link: "/projects/gmt-docker"
+ - heading: "nc5ng-docker"
+   content: "Docker Image with nc5ng-python and nadcon5-ng"
+   link: "/projects/nc5ng-docker"
 ---
 
 
 A Programmatic treatment of geodetic transformations, currently United States only with a focus on historical datums (USSD and NAD27) 
 
-For GIS Developers, Geodesists, Geographers, Cartographers,  Artists, Historians, Data Scientists,  and Historiographers.
-
-
+Dedicated to  GIS Developers, Geodesists, Geographers, Cartographers,  Artists, Historians, Data Scientists,  Historiographers, and old Map Enthusiasists
