@@ -23,11 +23,11 @@ projects:
    content: "Docker Image with Latest GMT Tools"
    link: "/projects/gmt-docker"
  - heading: "nc5ng-docker"
-   content: "Docker Image with nc5ng-python and nadcon5-ng"
+   content: "Docker Image with nc5ng-python"
    link: "/projects/nc5ng-docker"
 ---
 
 
-A Programmatic treatment of geodetic transformations, currently United States only with a focus on historical datums (USSD and NAD27) 
+A Programmatic treatment of geodetic transformations, currently United States only, with an initial focus on historical datums (USSD and NAD27) 
 
 Dedicated to  GIS Developers, Geodesists, Geographers, Cartographers,  Artists, Historians, Data Scientists,  Historiographers, and old Map Enthusiasists

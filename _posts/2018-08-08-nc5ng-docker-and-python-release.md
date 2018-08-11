@@ -18,4 +18,4 @@ For more information on `nc5ng-python` see the [Project Page](/projects/nc5ng-py
 
 
 
-> ![Plotting Coverage Data using `nc5ng-python`](/assets/img/nc5ng-docker/anouncement.png)
+> ![Plotting Coverage Data using `nc5ng-python`](/assets/img/nc5ng-docker/anouncement.png){:class="img-responsive"}

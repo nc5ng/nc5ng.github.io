@@ -5,42 +5,80 @@ blurb: "Python Wrapper for NADCON data and programs"
 github: github.com/nc5ng/NADCON5-ng
 ---
 
-A Python wrapper and API for the NADCON data and programs, this is the first layer of integration of NADCON5 data into other GIS projects and output formats. 
+A project to deliver NADCON datum transformation data to python processing pipelines and graphing utilities.
 
+`nc5ng-python` is developed across several source packages, but the complete distribution can be installed directly through using python package index tool `pip`
 
-Currently this project resides within the `NADCON5-ng` codebase, because of the tight coupling between functionality and the NADCON5 source programs and data.
+`pip install nc5ng`
 
-However the intent is to split the library  out once the library is more stable.
+Which will fetch all the internal packages and build the distribution.
 
 
 
 ## Sub-Projects
 
-1.  [`nc5ng.core`](#s-nc5ng-core)
-2.  [`nc5ng.nc5data`](#s-nc5ng-data)
+To facilitate development across multiple domains `nc5ng` serves as a meta-package
+that installs all currently released utilities
+
+1.  [`nc5ng-core`](#s-nc5ng-core)
+2.  [`nc5ng-common`](#s-nc5ng-common)
 
 ---
 
-### <a id="s-nc5ng-core"></a>  Core Fortran Program Wrapper
-**`nc5ng.core`**
+### <a id="s-nc5ng-core"></a>  Core NADCON Wrapper
+**`nc5ng-core`**
 
-A python interface wrapper around the fortran programs contained in nadcon5-ng
+A python distribution of the nc5ng code base and data. Several tightly coupled  libraries are
+released under this package.
 
-Also serves as a python interface to the build process itself (with appropriate fortran compiler and gmt tools), this allows scripting of the building specific output grids and intermediate data programatically through python
+
+**`nc5ng.core` :**
+
+Python interfaces to the underlying fortran programs in `nadcon5-ng`
 
 
----
+**`nc5ng.nc5data`:**
 
-###  <a id="s-nc5ng-data"></a>  Data API
-**`nc5ng.nc5data`**
- 
+
 A tightly coupled data extraction API around the fixed-format NADCON5 data files. No file generation is handled through this api, simply a wrapper for the data created using either the `Make` build system of `NADCON5-ng` or using `nc5ng.core`.
 
-The API features the following
+The API features:
 
-- Automated loading of pre-cimpiled conversion output and input data by region, source and target datum
-- Search and filter the complete dataset by PID, coordinate range, outlier status input region, or any other column present in any of the fixed format input data 
-- Memory caching cheese-ball database
+- Automated loading of pre-compiled conversion data by region, source, and target datum
+- Search and filter the complete dataset by PID, coordinate range, outlier status, input region, and other meta-data 
+- Memory caching "cheese-ball" database
 - (*incomplete*) GIS export to OGR, PostGIS, etc.
+
+
+**`nc5ng.build`:**  *(PLANNED)*
+
+A python wrapper of the NADCON build process and data compiling (with appropriate fortran compiler and gmt tools), this allows scripting of the building specific output grids and intermediate data programatically through python, and will serve as a build cache.
+
+
+
+### <a id="s-nc5ng-common"></a>  Common utilities and data types
+**`nc5ng-common`**
+
+Common types internal to nc5ng for export to  standard outside tools
+
+ - `GMT/Python`
+ - `GDAL`
+ - `numpy`
+ - `scipy`
+
+
+
+## Important Links
+
+**Github Projects:**
+  - [`nc5ng-core`](https://www.github.com/nc5ng/nadcon5-ng)
+  - ['nc5ng-common`](https://www.github.com/nc5ng/nc5ng-python-common)
+  - ['nc5ng' meta-package](https://www.github.com/nc5ng/nc5ng-python-toplevel)
+
+**Documentation:**
+
+Forthcoming...
+
+
 
 
