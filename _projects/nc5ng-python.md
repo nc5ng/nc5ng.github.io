@@ -77,7 +77,7 @@ Common types internal to nc5ng for export to  standard outside tools
 
 **Documentation:**
 
-Forthcoming...
+  - [`nc5ng-python`](https://py.docs.nc5ng.org/latest)
 
 
 
