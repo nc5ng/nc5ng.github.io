@@ -71,13 +71,13 @@ Common types internal to nc5ng for export to  standard outside tools
 ## Important Links
 
 **Github Projects:**
-  - [`nc5ng-core`](https://www.github.com/nc5ng/nadcon5-ng)
-  - ['nc5ng-common`](https://www.github.com/nc5ng/nc5ng-python-common)
-  - ['nc5ng' meta-package](https://www.github.com/nc5ng/nc5ng-python-toplevel)
+  - `nc5ng-core` [github.com/nc5ng/nadcon5-ng](https://www.github.com/nc5ng/nadcon5-ng)
+  - 'nc5ng-common` [github.com/nc5ng/nc5ng-python-common](https://www.github.com/nc5ng/nc5ng-python-common)
+  - 'nc5ng-python' top level package [github.com/nc5ng/nc5ng-python](https://www.github.com/nc5ng/nc5ng-python)
 
 **Documentation:**
 
-  - [`nc5ng-python`](https://py.docs.nc5ng.org/latest)
+  - `nc5ng-python` Top Level Documentation [py.docs.nc5ng.org](https://py.docs.nc5ng.org/en/latest)
 
 
 
