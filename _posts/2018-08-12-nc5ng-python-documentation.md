@@ -8,7 +8,7 @@ categories: anouncement
 
 Documentation for the python library `nc5ng-python` ([Homepage](/projects/nc5ng-python)) has been published, and a new version has been released.
 
-Documentation available at the [https://py.docs.nc5ng.org](https://py.docs.nc5ng.org/latest)
+Documentation available at [py.docs.nc5ng.org](https://py.docs.nc5ng.org/en/latest)
 
 Coupled with this, a 0.0.4 release of `nc5ng` python package has been uploaded to PyPi and is available for general consumption, an updated release of `docker-nc5ng` has also been provided
 
