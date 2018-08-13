@@ -10,6 +10,9 @@ headlines:
    caption: "We have documentation"
    link: "https://docs.nc5ng.org/latest"
    action: "docs"
+ - header: "nc5ng-python"
+   caption: "Python Docs Available"
+   action: "PyDocs"
  
 
 projects:

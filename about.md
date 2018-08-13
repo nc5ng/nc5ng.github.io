@@ -6,17 +6,21 @@ permalink: /about
 
 `nc5ng` was started in 2017 to bring North American Datum Conversion tools to a broader developer audience. With a focus on historic datums for use with Historical Topographic maps, the US Standard Datum (`USSD`) in particular. 
 
-Initially the project has been focused on documentation, updating the build pipeline, and low-level wrappers for the most direct manipulation and data analysis.
+Initially the project focus was documentation, porting the build pipeline, and low-level wrappers for the most direct manipulation and data analysis.
 
-Long Term Goals for the Project include:
+By 2018, the build pipeline for `NADCON5.0` was successfully ported to `GNU Make` and work on python wrappers and processing libraries was begun. The initial work is focused on completeing the data wrapper API, then recreating the build pipeline and output visualizations in python for on-the-fly transformations.
+
+Project Goals:
 
 - Adapt the existing programs to make it suitable for use as a stand-alone tool  in Continuous Integration / Continuous Deployment Data Processing Pipelines.
 
-- Construct `proj.4` compatible datum definitions for inclusion of USSD and other datums into common GIS tools
+- Construct `proj.4` and `WKT` compatible datum definitions for inclusion of USSD and other datums into common GIS tools and spatial reference databases,
 
-- Higher level wrappers and libraries
+- Create Higher level wrappers and libraries for visualization, processing, and web integration
 
-- Construct and export pipeline for exporting grids, vectors, and coverage points to PostGIS and other GIS database and file formats.
+- Provide  utilties and pipeline for exporting grids, vectors, and coverage points to PostGIS and other GIS database and file formats.
+
+- QGIS Plugin
 
 - Examples and expanded documentation
 
